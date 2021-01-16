@@ -60,7 +60,7 @@ class Player(Bot):
         if len(pairs) > 0: #we found a pair! update our state to say that this is a strong round
             self.strong_hole = True
         
-        allocation = pairs + singles 
+        allocation = pairs + singles
 
         for i in range(NUM_BOARDS): #subsequent pairs of cards should be pocket pairs if we found any
             cards = [allocation[2*i], allocation[2*i + 1]]
